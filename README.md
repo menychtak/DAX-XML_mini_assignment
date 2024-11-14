@@ -1,6 +1,6 @@
 # XML Publication Analyzer
 
-This mini-assignment demonstrates how to efficiently perform aggregation and extract tag content from a large XML file to derive meaningful insights. It utilizes a DAX abstract class for parsing the XML file, ensuring minimal memory usage while processing large datasets. After completing the aggregation, the resulting dictionary is visualized through a bar-chart using matplotlib.
+This mini-assignment demonstrates how to efficiently perform aggregation and extract tag content from a large XML file to derive meaningful insights. It utilizes SAX abstract class for parsing the XML file, ensuring minimal memory usage while processing large datasets. After completing the aggregation, the resulting dictionary is visualized through a bar-chart using matplotlib.
 
 ## Folder Structure
 
