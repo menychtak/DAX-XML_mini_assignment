@@ -34,7 +34,10 @@ def main():
     logger.info(f"Yearly publication counts: {yearly_records}")
 
     # Plot the results
-    plot_publications_per_year(yearly_records, logger)
+    xlabel = 'Year'
+    ylabel = 'Number of Publications'
+    title = 'Publications per Year'
+    plot_publications_per_year(yearly_records, logger, xlabel, ylabel, title)
 
 if __name__ == "__main__":
     main()
