@@ -11,7 +11,7 @@ from libs.plotter import plot_publications_per_year
 
 import time
 
-def main():
+def main(file, tag):
     # Set up logger
     logger = setup_logger()
 
@@ -19,11 +19,10 @@ def main():
     start_time = time.time()
 
     # Get the XML file path
-    xml_file_path = get_xml_file_path("file.xml")
-    tag_name = "year"
+    xml_file_path = get_xml_file_path(file)
 
     # Parse the XML file and get publication counts per year
-    yearly_records = parse_xml(xml_file_path, logger, tag_name)
+    yearly_records = parse_xml(xml_file_path, logger, tag)
 
     # Measure end time and calculate elapsed time
     end_time = time.time()
@@ -40,4 +39,8 @@ def main():
     plot_publications_per_year(yearly_records, logger, xlabel, ylabel, title)
 
 if __name__ == "__main__":
-    main()
+
+    xml_file_name = "file.xml"
+    aggregation_tag_name = "year"
+    
+    main(xml_file_name, aggregation_tag_name)
