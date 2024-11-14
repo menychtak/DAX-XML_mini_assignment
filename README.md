@@ -10,7 +10,7 @@ The project follows this structure:
 ├── code
 │   └── main.py               # Main script to run the XML analyzer
 ├── dataset
-│   └── file.xml              # Place your XML files here (e.g., dblp.xml)
+│   └── file.xml              # Place your XML files here (e.g., file.xml)
 ├── libs
 │   ├── xml_parser.py         # XML parsing logic
 │   ├── logger_config.py      # Logger setup
