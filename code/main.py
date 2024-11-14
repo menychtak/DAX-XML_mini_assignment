@@ -20,9 +20,10 @@ def main():
 
     # Get the XML file path
     xml_file_path = get_xml_file_path("file.xml")
+    tag_name = "year"
 
     # Parse the XML file and get publication counts per year
-    yearly_records = parse_xml(xml_file_path, logger)
+    yearly_records = parse_xml(xml_file_path, logger, tag_name)
 
     # Measure end time and calculate elapsed time
     end_time = time.time()
